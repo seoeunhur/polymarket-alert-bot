@@ -33,7 +33,7 @@ def simple_translate(text):
 
 def fetch_bets():
     try:
-        response = requests.get("https://api.polymarket.com/v3/markets")
+        response = requests.get("https://blue-sunset-f0d1.lovelycococo.workers.dev/")
         if response.status_code == 200:
             return response.json().get("markets", [])
     except Exception as e:
